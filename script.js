@@ -8,10 +8,14 @@ const circle = document.getElementById('circle')
 const range = document.getElementById('range')
 const span = document.getElementById('range-span')
 
+
+range.value = 50
+
 btn.addEventListener('click', () => {
     square.style.backgroundColor = text.value
     text.value = ''
 })
+
 e_btn.style.display = 'none'
 span.textContent = '50 %'
 range.addEventListener('input', (event) => {
@@ -20,3 +24,4 @@ range.addEventListener('input', (event) => {
     circle.style.width = `${event.target.value}%`
 
 })
+
